@@ -7,7 +7,7 @@ from django.conf import settings
 
 class AbstractParser(ABC):
     """Абстрактный класс парсера файла."""
-    
+
     @abstractmethod
     def parse(self, file: bytearray) -> str:
         """Распарсить файл.
